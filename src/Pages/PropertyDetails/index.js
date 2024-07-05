@@ -137,7 +137,7 @@ const PropertyDetails = () => {
     const handleSubmit = (e) => {
       e.preventDefault();
       if (validate()) {
-       
+        console.log(form);
         handleClose();
       }
     };
