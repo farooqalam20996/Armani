@@ -1,0 +1,143 @@
+.Property-Container {
+    width: 100%;
+    /* background-color: red; */
+}
+
+.Property-background {
+    position: relative;
+    width: 100%;
+    height: 73vh;
+    background-size: cover;
+    background-position: bottom center;
+    /* background-image: url('../../Images/residence-banner.jpg'); */
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Property-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25); 
+    z-index: 1;
+}
+
+.centered-text {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+.Property-list-container {
+    /* background-color: #f5f5f5; */
+    padding-top: 3rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    min-height: 42rem;
+}
+
+.Property-list-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.Property-Facilities-container {
+    margin-top: -17rem;
+    /* padding-left: 8rem;
+    padding-right: 8rem; */
+    /* min-height: 42rem; */
+}
+
+.property-facilities-sub-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* height: 27rem; */
+    padding-left: 8rem;
+    padding-right: 8rem;
+    width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 425px) {
+    .Property-list-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Property-list-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .Property-Facilities-container {
+        margin-top: 0rem;
+    }
+
+    .property-facilities-sub-container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .propertyStyle {
+        padding: 1rem;
+        background-color: white;
+        border: 1px solid lightgray;
+        z-index: 2;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+     .property-facilities-sub-container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .Property-list-container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .Property-Facilities-container {
+        margin-top: 0rem;
+    }
+
+    /* .property-facilities-sub-container {
+     
+        padding-left: 0rem;
+        padding-right: 0rem;
+    } */
+    
+}
+
+@media (min-width: 1440px)   {
+    .Property-Facilities-container {
+        margin-top: -8rem;
+    }
+}
+
+@media (min-width: 2560px) {
+
+}

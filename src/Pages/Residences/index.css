@@ -1,0 +1,155 @@
+.Residence-Container {
+    width: 100%;
+}
+
+.Residence-background {
+    position: relative;
+    width: 100%;
+    height: 73vh;
+    background-size: cover;
+    background-position: bottom center;
+    background-image: url('../../Images/residence-banner.jpg');
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Residence-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25); 
+    z-index: 1;
+}
+
+.centered-text {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+.keyFeatures {
+    width: 100%;
+}
+
+.list-container {
+    /* background-color: #f5f5f5; */
+    padding-top: 3rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    min-height: 42rem;
+}
+
+.list-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.bullet-point {
+    width: 0.75rem;
+    height: 0.5rem;
+    /* border-radius: 100%; */
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.list-item p {
+    margin: 0;
+}
+
+.properties-listings{
+    margin-top: -10rem;
+    /* background-color: red; */
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.propertyStyle {
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid lightgray;
+    z-index: 2;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.propertyStyle:hover {
+    transform: scale(0.97); /* Zoom in effect */
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 425px) {
+    .list-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .list-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .properties-listings{
+        margin-top: 1rem;
+        /* background-color: red; */
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .propertyStyle {
+        padding: 1rem;
+        background-color: white;
+        border: 1px solid lightgray;
+        z-index: 2;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .list-container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    
+}
+
+@media (min-width: 1440px)   {
+    .properties-listings{
+        margin-top: -8rem;
+        /* background-color: red; */
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .propertyStyle {
+        padding: 1rem;
+        background-color: white;
+        border: 1px solid lightgray;
+        z-index: 2;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (min-width: 2560px) {
+
+}
