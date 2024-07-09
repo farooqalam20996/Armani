@@ -10,12 +10,27 @@ import AppHeader from '../Components/Header';
 import AppFooter from '../Components/Footer';
 import './index.css'
 import PropertyDetails from '../Pages/PropertyDetails';
-
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 const ProjectRoutes = () => {
+
+    const whatsappNumber = '+971523126409';
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const whatsappUrl = `https://web.whatsapp.com/send?phone=${encodeURIComponent(whatsappNumber)}`;
+  
+    const handleWhatsAppClick = (event) => {
+        if (isMobile) {
+            event.preventDefault(); // Prevent the default link behavior
+            window.open(`https://wa.me/${whatsappNumber}`, '_blank');
+        }
+    };
+
     return(
         <Router>
             <AppHeader />
             <div className="main-container">
+                
                 <Routes> 
                     <Route
                         exact
@@ -41,7 +56,30 @@ const ProjectRoutes = () => {
                         element={ <ArmaaniContact /> }
                     />
                 </Routes>
+                <div className="icons-container">
+    <div className="icons">
+        <div className="icon">
+         <a
+            href={`https://web.whatsapp.com/send?phone=${encodeURIComponent(whatsappNumber)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleWhatsAppClick}
+        >
+            <WhatsAppIcon style={{ fontSize: 50, color: 'green' }} />
+            {/* Adjust fontSize and color as needed */}
+        </a>
+        </div>
+        {/* <div className="icon">
+            <InstagramIcon style={{ color: '#c13584' }} />
+        </div>
+        <div className="icon">
+            <FacebookIcon style={{ color: '#3b5998' }} />
+        </div> */}
+    </div>
+</div>
             </div>
+          
+       
             <AppFooter />
         </Router>
     );

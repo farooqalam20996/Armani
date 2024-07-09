@@ -149,6 +149,7 @@ function AppHeader({userRole}) {
     return (
         <div style={{ position:"inherit", backgroundColor: primaryClr, height:'5rem',display:'flex', alignItems:'center', justifyContent:"center",  }} >  
             <Container maxWidth="" style={{ maxWidth:'90%' }} >
+        
                 <Toolbar>
                     
                     <Link to={'./'} >

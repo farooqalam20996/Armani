@@ -15,7 +15,7 @@ const ListingComponent = ({
 
     return(
         <div className={xClassName} >
-            <img src={imagesURI} style={{ width:"100%", height:"100%"}} />
+            <img src={imagesURI} style={{ width:"100%", height:"200px",objectFit:'cover'}} />
             <div style={{ display:'flex', alignItems:"center", justifyContent:"space-between", width:"100%", marginTop: '1rem'}} >
                 <Typography style={{ fontSize:'0.85rem', }} >
                     {xTitle}

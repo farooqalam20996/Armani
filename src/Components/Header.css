@@ -1,0 +1,21 @@
+
+.content {
+    flex: 1; /* Flexible to take remaining space */
+    /* Your main content styles */
+}
+
+.icons {
+    display: flex;
+    flex-direction: column; /* Align icons vertically */
+    align-items: flex-end; /* Align icons to the right */
+    margin-left: 20px; /* Adjust margin as needed */
+}
+
+.icon {
+    margin-bottom: 10px; /* Spacing between icons */
+}
+
+.icon i {
+    font-size: 24px; /* Adjust icon size */
+    /* Additional styles for icons */
+}

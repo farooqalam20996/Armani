@@ -1,3 +1,22 @@
+.icons-container {
+  position: fixed;
+  /* top: 50%; */
+  /* left: 50%; */
+  bottom: 1%;
+  right: 1%;
+  transform: translate(-50%, -50%);
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
 .main-container {
     /* width: 90%;
     display: flex;

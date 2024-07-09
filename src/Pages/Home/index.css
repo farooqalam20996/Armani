@@ -1,3 +1,16 @@
+
+@font-face {
+    font-family: 'AradaHeadline-Bold';
+    src: url('../../../public/fonts/AradaHeadline-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Example usage */
+.custom-font {
+    font-family: 'AradaHeadline-Bold', Arial, sans-serif;
+}
+
 .Home-Container {
     width: 100%;
 }
@@ -102,6 +115,18 @@
     height: 27rem;
     padding-left: 8rem;
     padding-right: 8rem;
+    /* overflow: auto;  */
+}
+
+.armaaniDisc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 27rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 10px;
     /* overflow: auto;  */
 }
 

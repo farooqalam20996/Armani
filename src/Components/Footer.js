@@ -66,7 +66,7 @@ function AppFooter({userRole}) {
                         <Box display="flex" alignItems="center" justifyContent="flex-start" mt={2}>
                         <PhoneIcon style={{ fontSize: '2rem', color: secondaryClr }} />
                         <Typography style={{ fontSize: '1.25rem', fontWeight: '400', marginLeft: '0.5rem', color: secondaryClr }}>
-                            04 529 9724
+                           +971 52 312 6409
                         </Typography>
                         </Box>
                     </Grid>
