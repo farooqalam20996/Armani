@@ -65,7 +65,7 @@ const ProjectRoutes = () => {
             rel="noopener noreferrer"
             onClick={handleWhatsAppClick}
         >
-            <WhatsAppIcon style={{ fontSize: 50, color: 'green' }} />
+            <WhatsAppIcon style={{ fontSize: 50, color: '#25D366' }} />
             {/* Adjust fontSize and color as needed */}
         </a>
         </div>

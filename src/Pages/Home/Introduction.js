@@ -107,7 +107,7 @@ const ArmaniIntroduction = () => {
                                         <ListingComponent 
                                             xClassName={'listingComp'}
                                             xNumOfBed={item.bedrooms ? item.bedrooms : ""  }
-                                            xProertyType={'Apartment'}
+                                            xProertyType={item.property_type}
                                             xTitle={item.project_name ? item.project_name : ""  }
                                             xImage={imageUri}
                                             xOnClick={()=> fNavigateToDetailsPage(item)}
