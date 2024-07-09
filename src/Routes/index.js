@@ -25,6 +25,13 @@ const ProjectRoutes = () => {
             window.open(`https://wa.me/${whatsappNumber}`, '_blank');
         }
     };
+    const iconStyle = {
+        fontSize: 50,
+        color: '#25D366',
+        boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.7)', // Adjust shadow here
+        borderRadius: '50%', // To make the shadow rounded if the icon is circular
+        padding:'0.25rem'
+    };
 
     return(
         <Router>
@@ -65,7 +72,7 @@ const ProjectRoutes = () => {
             rel="noopener noreferrer"
             onClick={handleWhatsAppClick}
         >
-            <WhatsAppIcon style={{ fontSize: 50, color: '#25D366' }} />
+            <WhatsAppIcon style={iconStyle} />
             {/* Adjust fontSize and color as needed */}
         </a>
         </div>
