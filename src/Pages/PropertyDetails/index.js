@@ -330,22 +330,22 @@ const PropertyDetails = () => {
                     </Grid>
                     <Grid item style={{ width: '50%', height: '27rem' }}  xs={12} md={12} lg={6} xl={6} >
                         <Box>
-                        <Carousel>
-                            {
-                                propertyDetails.images ? 
-                                    propertyDetails.images.map((item, i) => (
-                                        <Box key={i} style={{ width: '100%', height: '100%' }}>
-                                            <img src={`${propertyImagesUrl}/${item.name}`} alt={item.name} className="carousel-image" />
-                                        </Box>
-                                    ))
-                                    :
-                                    itemsData.map((item, i) => (
-                                        <Box key={i} style={{ width: '100%', height: '100%' }}>
-                                            <img src={item.imgPath} alt={item.name} className="carousel-image" />
-                                        </Box>
-                                    ))
-                            }
-                        </Carousel>
+                            <Carousel>
+                                {
+                                    propertyDetails.images ? 
+                                        propertyDetails.images.map((item, i) => (
+                                            <Box key={i} style={{ width: '100%', height: '27rem' }}>
+                                                <img src={`${propertyImagesUrl}/${item.name}`} alt={item.name} className="carousel-image" style={{ width:"100%", height:"100%"}} />
+                                            </Box>
+                                        ))
+                                        :
+                                        itemsData.map((item, i) => (
+                                            <Box key={i} style={{ width: '100%', height: '27rem' }}>
+                                                <img src={item.imgPath} alt={item.name} className="carousel-image" style={{ width:"100%", height:"100%"}} />
+                                            </Box>
+                                        ))
+                                }
+                            </Carousel>
                         </Box>
                     </Grid>
                 </Grid>
